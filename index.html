@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ian Hamilton Finlay - "Acrobats" animado</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5ca6c8; 
+    overflow: hidden;
+    transition: background 10s;
+  }
+  body:hover {
+    background: #fcb045; 
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 70px);
+    grid-template-rows: repeat(9, 70px);
+    gap: 10px;
+  }
+  .grid span {
+    color: #e46c3f;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease, color 0.6s ease;
+    animation: float 6s ease-in-out infinite;
+  }
+  .grid span:hover {
+    color: white;
+  }
+  .grid {
+    animation: appear 2s ease forwards;
+  }
+</style>
+</head>
+<body>
+  <div class="grid">
+    <span>a</span><span>c</span><span>r</span><span>o</span><span>b</span><span>a</span><span>t</span>
+    <span>c</span><span>r</span><span>o</span><span>b</span><span>a</span><span>t</span><span>a</span>
+    <span>r</span><span>o</span><span>b</span><span>a</span><span>t</span><span>a</span><span>c</span>
+    <span>o</span><span>b</span><span>a</span><span>t</span><span>a</span><span>c</span><span>r</span>
+    <span>b</span><span>a</span><span>t</span><span>a</span><span>c</span><span>r</span><span>o</span>
+    <span>a</span><span>t</span><span>a</span><span>c</span><span>r</span><span>o</span><span>b</span>
+    <span>t</span><span>a</span><span>c</span><span>r</span><span>o</span><span>b</span><span>a</span>
+    <span>a</span><span>c</span><span>r</span><span>o</span><span>b</span><span>a</span><span>t</span>
+    <span>c</span><span>r</span><span>o</span><span>b</span><span>a</span><span>t</span><span>a</span>
+  </div>
+</body>
+</html>
